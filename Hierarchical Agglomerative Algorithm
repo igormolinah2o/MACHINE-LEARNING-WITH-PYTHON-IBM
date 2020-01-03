@@ -81,3 +81,7 @@ Z = hierarchy.linkage(dist_matrix, 'complete')
 #Next, we will save the dendrogram to a variable called dendro. In doing this, the dendrogram will also be displayed. Using the dendrogram class from hierarchy, pass in the parameter:
 Z
 dendro = hierarchy.dendrogram(Z)
+
+# Changing to Average dendrogram
+Z = hierarchy.linkage(dist_matrix, 'average')
+dendro = hierarchy.dendrogram(Z)
